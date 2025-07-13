@@ -17,13 +17,15 @@ body{
  background:var(--light);
  color:var(--dark);
  line-height:1.6;
+ padding-
 }
 
-.container{
- max-width:960px;
- margin:0 auto;
- padding:0 1rem;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: calc(8px + 1.5625vw); /* responsive padding (13–48px) */
 }
+
 
 .hero{
  background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);
@@ -93,4 +95,10 @@ article h3{
    flex-direction:column;
    align-items:center;
  }
+
+ @media (max-width: 600px) {
+  .container {
+    padding: 14px;
+  }
+}
 }
